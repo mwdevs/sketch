@@ -1,0 +1,47 @@
+#container {
+
+	margin: auto;
+	width: 960px;
+}
+
+div {
+
+	display: block;
+}
+
+button {
+
+  	display: inline;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    cursor: pointer;
+    text-align: center;
+    margin: 5px 5px;
+}
+
+#grid {
+
+	margin: auto;
+	overflow: auto;
+	width: 960px;
+}
+
+#grid > div {
+
+	display: block;
+	float: left;
+	opacity: 1;
+}
+
+.square {
+
+	border: 1px white solid;
+	background-color: black;
+	float: left;
+}
+
+.new-row {
+	clear: both;
+}
+
