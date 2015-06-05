@@ -11,7 +11,7 @@ function init() {
 
 //user input
 function userPrompt() {
-	var userInput = prompt(' anything < 129');
+	var userInput = prompt('Enter a grid size from 2 - 50');
 	currentSize = userInput;
 }
 
@@ -29,7 +29,6 @@ function generateGrid(gridSize) {
 
 	$('.square').css('height',squareSize);
 	$(".square").css('width', squareSize);
-	
 }
 
 //colors
@@ -63,7 +62,6 @@ function randomColor() {
 	});
 }
 
-
 //clear grid
 function clearGrid() {
 	$('.square').remove();
@@ -71,7 +69,7 @@ function clearGrid() {
 
 //buttons
 function newButton() {
-	var userInput1 = prompt('Enter a number below 129');
+	var userInput1 = prompt('Enter a grid size from 2 - 50');
 	currentSize = userInput1;
 	clearGrid();
 	generateGrid(currentSize);
@@ -79,7 +77,7 @@ function newButton() {
 }
 
 function colorButton() {
-	var userInput2 = prompt('Enter a number below 129');
+	var userInput2 = prompt('Enter a grid size from 2 - 50');
 	currentSize = userInput2;
 	clearGrid();
 	generateGrid(currentSize);
@@ -88,7 +86,7 @@ function colorButton() {
 }
 
 function trailButton() {
-	var userInput3 = prompt("Enter a number below 129");
+	var userInput3 = prompt('Enter a grid size from 2 - 50');
 	currentSize = userInput3;
 	clearGrid();
 	generateGrid(currentSize);
